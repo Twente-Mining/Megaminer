@@ -8,8 +8,8 @@ param(
 #. .\Include.ps1
 
 $Name = (Get-Item $script:MyInvocation.MyCommand.Path).BaseName
-$ActiveOnManualMode    = $true
-$ActiveOnAutomaticMode = $true
+$ActiveOnManualMode    = $false
+$ActiveOnAutomaticMode = $false
 $ActiveOnAutomatic24hMode=$true
 $AbbName='DMN'
 $WalletMode="APIKEY"
