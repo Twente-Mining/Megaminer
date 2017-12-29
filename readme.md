@@ -10,6 +10,8 @@ MININGPOOLHUB -- registration required, autoexchange to selected coin on pool´s
 
 SUPRNOVA -- registration required, one registration for all pools except bitcoin cash, no autoexchange
 
+MININGDUTCH -- registration required, one registration for all pools except bitcoin cash, no autoexchange
+
 BLOCKSFACTORY -- registration required, one registration for all pools, no autoexchange
 
 YIIMP -- Anonymous, no autoexchange, must set a wallet for each coin
