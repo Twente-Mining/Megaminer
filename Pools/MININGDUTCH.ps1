@@ -53,10 +53,27 @@ if (($Querymode -eq "core" ) -or ($Querymode -eq "Menu")){
         $Pools +=[pscustomobject]@{"coin" = "Shield"; "algo"="myriad-groestl"; "symbol"= "XSH "; "server"="mining-dutch.nl";"port"="3762";"location"="EU";"WalletSymbol"="XSH"};
         $Pools +=[pscustomobject]@{"coin" = "Verge"; "algo"="myriad-groestl"; "symbol"= "XVG "; "server"="mining-dutch.nl";"port"="3426";"location"="EU";"WalletSymbol"="XVG"};
 
+        $Pools +=[pscustomobject]@{"coin" = "Bulwark"; "algo"="nist5"; "symbol"= "BWK"; "server"="mining-dutch.nl";"port"="3758";"location"="EU";"WalletSymbol"="BWK "};
+        $Pools +=[pscustomobject]@{"coin" = "Coimatic2"; "algo"="nist5"; "symbol"= "CTIC2"; "server"="mining-dutch.nl";"port"="3712";"location"="EU";"WalletSymbol"="CTIC2"};
+        $Pools +=[pscustomobject]@{"coin" = "Ectam"; "algo"="nist5"; "symbol"= "ECT"; "server"="mining-dutch.nl";"port"="3759";"location"="EU";"WalletSymbol"="ECT"};
+          $Pools +=[pscustomobject]@{"coin" = "Virtauniquecoin"; "algo"="nist5"; "symbol"= "VUC"; "server"="mining-dutch.nl";"port"="3408";"location"="EU";"WalletSymbol"="VUC"};
+          $Pools +=[pscustomobject]@{"coin" = "Wyvern"; "algo"="nist5"; "symbol"= "WYV"; "server"="mining-dutch.nl";"port"="3497";"location"="EU";"WalletSymbol"="WYV"};     
 
-        
-      
-        
+        $Pools +=[pscustomobject]@{"coin" = "Bitquark"; "algo"="quark"; "symbol"= "BTQ"; "server"="mining-dutch.nl";"port"="3746";"location"="EU";"WalletSymbol"="BTQ"};
+        $Pools +=[pscustomobject]@{"coin" = "Dimecoin"; "algo"="quark"; "symbol"= "DIME"; "server"="mining-dutch.nl";"port"="3486";"location"="EU";"WalletSymbol"="DIME"};
+        $Pools +=[pscustomobject]@{"coin" = "Giro"; "algo"="quark"; "symbol"= "GIRO"; "server"="mining-dutch.nl";"port"="3434";"location"="EU";"WalletSymbol"="GIRO"};
+        $Pools +=[pscustomobject]@{"coin" = "Joincoin"; "algo"="quark"; "symbol"= "J"; "server"="mining-dutch.nl";"port"="3736";"location"="EU";"WalletSymbol"="J"};
+        $Pools +=[pscustomobject]@{"coin" = "Metacoin"; "algo"="quark"; "symbol"= "MET"; "server"="mining-dutch.nl";"port"="3461";"location"="EU";"WalletSymbol"="MET"};
+        $Pools +=[pscustomobject]@{"coin" = "Quarkcoin"; "algo"="quark"; "symbol"= "QRK"; "server"="mining-dutch.nl";"port"="3474";"location"="EU";"WalletSymbol"="QRK"};
+        $Pools +=[pscustomobject]@{"coin" = "Securecoin"; "algo"="quark"; "symbol"= "SRC"; "server"="mining-dutch.nl";"port"="3485";"location"="EU";"WalletSymbol"="SRC"};
+        $Pools +=[pscustomobject]@{"coin" = "Sharkcoin"; "algo"="quark"; "symbol"= "SAK"; "server"="mining-dutch.nl";"port"="3713";"location"="EU";"WalletSymbol"="SAK"};
+
+
+
+
+
+
+
 
         $Pools |ForEach-Object {
 
@@ -68,7 +85,7 @@ if (($Querymode -eq "core" ) -or ($Querymode -eq "Menu")){
                                     Price         = $null
                                     Price24h      = $null
                                     Protocol      = "stratum+tcp"
-                                    Host          = "mining-dutch.nl"
+                                    Host          = $_Server
                                     Port          = $_.Port
                                     User          = "$Username.$WorkerName"
                                     Pass          = "x"
