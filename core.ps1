@@ -42,7 +42,7 @@ param(
 #$PoolsName='hash_refinery'
 #$PoolsName='ahashpool'
 #$PoolsName='suprnova'
-
+#$PoolsName='MiningDutch'
 #$PoolsName="Nicehash"
 
 #$Coinsname =('bitcore','Signatum','Zcash')
