@@ -1,0 +1,16 @@
+{
+"Path" : ".\\Bin\\hsrminer_neoscrypt\\hsrminer_neoscrypt.exe",
+"ExtractionPath" : ".\\Bin\\hsrminer_neoscrypt\\",
+"Uri" : "https://github.com/KlausT/ccminer/releases/download/8.16/ccminer-816-cuda91-x64.zip",
+"Types" : ["NVIDIA"],
+"Arguments" : "-o #PROTOCOL#://#SERVER#:#PORT# -u #LOGIN# -p #PASSWORD# ",
+"API" : "Ccminer",
+"Wrap" : false,
+"Dualmining":false,
+"PrelaunchCommand":"",
+"Algorithms": [
+                            {"Neoscrypt":"-a Neoscrypt"}
+                
+              ]
+}
+

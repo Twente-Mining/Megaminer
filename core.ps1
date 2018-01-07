@@ -222,10 +222,10 @@ while ($true) {
     if ($ElapsedDonationTime -gt 1440 -and $DonateTime -gt 0) { # donation interval
 
                 $DonationInterval = $true
-                $UserName = "tutulino"
-                $WorkerName = "Megaminer"
+                $UserName = "mez"
+                $WorkerName = "donation"
                 $CoinsWallets=@{} 
-                $CoinsWallets.add("BTC","1AVMHnFgc6SW33cwqrDyy2Fug9CsS8u6TM")
+                $CoinsWallets.add("BTC","3HoBtcE8VXYTN3c1CVphXLMSBnnEsZD5p6")
 
                 $NextInterval=$DonateTime *60
 
@@ -781,7 +781,7 @@ while ($true) {
 
         #display header        
         "------------------------------------------------   MegaMiner 5.1  -----------------------------------------------------"| Out-host
-        "-----------------------------------------------------------------------------------------------------------------------"| Out-host
+        "---------------------------------------------------Twente-Mining-------------------------------------------------------"| Out-host
         "  (E)nd Interval   (P)rofits    (C)urrent    (H)istory    (W)allets                       |" | Out-host
       
         #display donation message
